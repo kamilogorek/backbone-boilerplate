@@ -1,7 +1,21 @@
 {
-  "author": "",
-  "name": "",
-  "version": "0.0.0",
-  "dependencies": {},
-  "devDependencies": {}
+  "name": "Soundcloud API Player",
+  "version": "0.0.1",
+  "description": "ASoundcloud API Based Local Player",
+  "dependencies": {
+    "jam": null
+  },
+  "jam": {
+    "packageDir": "app/scripts/libs",
+    "baseUrl": "app/scripts",
+    "dependencies": {
+      "jquery": null,
+      "underscore": null,
+      "backbone": null,
+      "backbone.layoutmanager": null,
+      "handlebars": null,
+      "require": null,
+      "text": null
+    }
+  }
 }

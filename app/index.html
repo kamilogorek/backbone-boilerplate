@@ -14,23 +14,19 @@
     </head>
     <body>
 
-    <!-- Main container. -->
-    <div role="main" id="main" class="container">
-        <div class="hero-unit">
-            <h1>Cheerio!</h1>
-            <p>You now have</p>
-            <ul>
-                <li>HTML5 Boilerplate</li>
-                <li>jQuery</li>
-                <li>Backbone.js</li>
-                <li>Backbone LayoutManager</li>
-                <li>Require.js</li>
-                <li>Mocha</li>
-            </ul>
-            <p>installed.</p>
-            <h3>Enjoy coding! - Yeoman</h3>
+        <h1 class="main-title">Soundcloud API Based Player</h1>
+
+        <div class="player"></div>
+
+        <div class="container clearfix">
+            <div class="navigation">
+                <h2>Navigation</h2>
+            </div>
+
+            <div class="content">
+                <h2>Content</h2>
+            </div>
         </div>
-    </div>
 
         <!--[if lt IE 7]>
             <p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
@@ -39,7 +35,7 @@
         <!-- Add your site or application content here -->
 
         <!-- build:js scripts/amd-app.js -->
-        <script data-main="scripts/config" src="scripts/libs/require.js"></script>
+        <script data-main="scripts/app" src="scripts/libs/require.js"></script>
         <!-- endbuild -->
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->

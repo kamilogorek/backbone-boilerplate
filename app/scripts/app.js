@@ -1,14 +1,13 @@
 define([
-  // Libraries.
   "jquery",
-  "lodash",
+  "underscore",
+  "handlebars",
   "backbone",
-
-  // Plugins.
-  "plugins/backbone.layoutmanager"
+  "backbone.layoutmanager",
+  "text"
 ],
 
-function($, _, Backbone) {
+function($, _, Handlebars, Backbone) {
 
   // Provide a global location to place configuration settings and module
   // creation.
@@ -19,26 +18,6 @@ function($, _, Backbone) {
 
   // Localize or create a new JavaScript Template object.
   var JST = window.JST = window.JST || {};
-
-  // Configure LayoutManager with Backbone Boilerplate defaults.
-  Backbone.LayoutManager.configure({
-    paths: {
-      layout: "app/templates/layouts/",
-      template: "app/templates/"
-    },
-
-    fetch: function(path) {
-      path = path + ".html";
-
-      if (!JST[path]) {
-        $.ajax({ url: app.root + path, async: false }).then(function(contents) {
-          JST[path] = _.template(contents);
-        });
-      }
-
-      return JST[path];
-    }
-  });
 
   // Mix Backbone.Events, modules, and layout management into the app object.
   return _.extend(app, {

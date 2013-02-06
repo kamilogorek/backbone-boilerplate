@@ -1,1 +1,32 @@
 @import "h5bp.css";
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.player {
+    min-height: 200px;
+    background: rgba(255,0,0,0.2);
+}
+
+.container {
+
+}
+
+.navigation {
+    width: 25%;
+    float: left;
+    background: rgba(0,255,0,0.2);
+}
+
+.content {
+    width: 75%;
+    float: left;
+    background: rgba(0,0,255,0.2);
+}
